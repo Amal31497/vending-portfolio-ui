@@ -1,0 +1,23 @@
+.home-main-image{
+    width:100%;
+    animation-name:unblur;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes unblur {
+    from{
+        filter:blur(10px);
+    } to {
+        filter:blur(0px);
+    }
+}
+
+
+.HomwMainImageWrapper{
+    position: relative;
+}
+
+

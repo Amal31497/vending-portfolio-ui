@@ -1,0 +1,115 @@
+.contact-form-wrapper{
+    width:80%;
+    height:200px;
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.contact-form-wrapper>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.inputs{
+    width:60%;
+}
+
+.inputs>input{
+    margin-bottom:1rem;
+    height:25px;
+    font-size: small;
+    width:100%;
+}
+
+.contact-form-Submit-button{
+    height:75%;
+    border-radius:10rem;
+    background-color: transparent;
+}
+
+.contact-form-Submit-button>span{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 900;
+}
+
+.contact-form-Submit-button:hover{
+    background-color: black;
+    color:white;
+}
+
+.contact-form-Error-button{
+    height:75%;
+    border-radius:10rem;
+    background-color: transparent;
+    color:red;
+    animation-name:shake;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+    0% {
+        
+    } 10% {
+        transform: rotate(2deg);
+    } 20% {
+        transform: rotate(-2deg);
+    } 30% {
+        transform: rotate(2deg);
+    } 40% {
+        transform: rotate(-2deg);
+    } 50% {
+        transform: rotate(2deg);
+    } 60% {
+        transform: rotate(-2deg);
+    } 70% {
+        transform: rotate(2deg);
+    } 80% {
+        transform: rotate(-2deg);
+    } 90% {
+        transform: rotate(2deg);
+    } 100% {
+        transform: rotate(0%);
+    }
+}
+
+.contact-form-Error-button>span{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 900;
+}
+
+.contact-form-Thanks-button>span{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 900;
+}
+
+.contact-form-Thanks-button{
+    height:75%;
+    border-radius:10rem;
+    background-color: transparent;
+    color:green;
+    animation-name:slideDown;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity:0%;
+        transform:translateX(60%)
+    } to {
+        opacity:100%;
+        transform:translateX(0%)
+    }
+}
