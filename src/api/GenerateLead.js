@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = `http://vendingportfolio-env.eba-7zbsnfmb.us-west-2.elasticbeanstalk.com/:5000/api/lead`;
+const baseUrl = `http://vendingportfolio-env.eba-7zbsnfmb.us-west-2.elasticbeanstalk.com:8080/api/lead`;
 
 const GenerateLead = {
     createLead: (newLead) => {
