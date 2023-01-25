@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = `http://cors-everywhere.vendingportfolio-env.eba-7zbsnfmb.us-west-2.elasticbeanstalk.com/api/lead`;
+const baseUrl = `https://cors-everywhere.vendingportfolio-env.eba-7zbsnfmb.us-west-2.elasticbeanstalk.com/api/lead`;
 
 const GenerateLead = {
     createLead: (newLead) => {
