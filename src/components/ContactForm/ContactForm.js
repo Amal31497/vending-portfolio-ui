@@ -35,6 +35,7 @@ function ContactForm(){
             address: address,
             status:"warm"
         }).then((res) => {
+            console.log("TEST");
             console.log(res);
             if (res.status === 201) {
                 setButtonStatus('Thanks')
