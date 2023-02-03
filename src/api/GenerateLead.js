@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = `https://vending-portfolio-prod.cubxcyyzf0qw.us-west-2.rds.amazonaws.com:5000/api/lead`;
+const baseUrl = `https://Vendingportfolio-env.eba-7zbsnfmb.us-west-2.elasticbeanstalk.com:5000/api/lead`;
 
 const GenerateLead = {
     createLead: (newLead) => {
