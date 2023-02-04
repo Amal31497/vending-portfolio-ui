@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = `https://snackstr.com/api/lead`;
+const baseUrl = `https://api.snackstr.com/api/lead`;
 
 const GenerateLead = {
     createLead: (newLead) => {
