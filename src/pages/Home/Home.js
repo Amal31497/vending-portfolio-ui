@@ -18,7 +18,7 @@ function Home(){
             <Services />
             <br />
             <RequestSteps style={{width:"100vw"}}/>
-            <h4 style={{marginTop:"5%",marginBottom:"4%", fontWeight:"900"}} id="offers">Our Machines</h4>
+            <h4 style={{marginTop:"5%",marginBottom:"4%", fontWeight:"900"}} id="offers">Vending Machines</h4>
             <OurMachines />
             <h4 style={{marginTop:"5%",marginBottom:"2%", fontWeight:"900"}} id="products">What do our customers like</h4>
             <MarqueeProductLine />

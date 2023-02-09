@@ -1,19 +1,19 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
-import Cheetos from "../..//resources/cheetos-logo.jpeg";
-import Coke from "../../resources/Coca-Cola-Logo-2.jpeg";
 import Doritos from "../../resources/Doritos-logo.png";
-import Gatorate from "../../resources/Gatorade-logo.jpeg";
 import Lays from "../../resources/Lays-Logo.png";
-import Oreo from "../../resources/oreo-logo.jpeg";
 import Pepsi from "../../resources/pepsi-logo.png";
-import Quaker from "../../resources/quaker-logo.webp";
 import Snickers from "../../resources/Snickers-Logo.png";
 import Sprite from "../../resources/Sprite-Logo.png";
 import MM from "../../resources/MMs-logo.png";
-import PopTarts from "../../resources/pop-tarts-logo.jpeg";
 import Reeses from "../../resources/reeses-logo.png";
 import DrPepper from "../../resources/dr-pepper-logo.png";
+import Oreo from "../../resources/Oreo-Logo.png";
+import Cheetos from "../..//resources/cheetos-logo.png";
+import Coke from "../../resources/Coca-Cola-logo.png";
+import Gatorate from "../../resources/Gatorade-logo.png";
+import Quaker from "../../resources/Quaker-Logo.png";
+import PopTarts from "../../resources/Poptarts-Logo.png";
 
 import "./MarqueeProductLine.css";
 

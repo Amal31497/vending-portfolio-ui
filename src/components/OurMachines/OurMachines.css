@@ -1,22 +1,23 @@
-.our-machines-wrapper{
-    width:96% !important;
-    height:40vh;
-    margin-left:auto !important;
-    margin-right:auto !important;
-}
-
 .machine-pics{
-    height:200px;
-    width:120px;
+    height:500px;
+    width:290px;
 }
 
-.machine-option{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+.machine-pics-wrapper{
 }
 
-.machine-info-title{
-    font-weight: 900;
+#our-machines-main-text{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: start;
+    width:80%;
+    height:clamp(1rem, calc(2vw + 12rem), 12rem);
 }
+
+
+.our-machines-extra{
+    text-align: start;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}   
