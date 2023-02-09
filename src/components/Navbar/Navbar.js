@@ -2,7 +2,6 @@ import React from 'react';
 import "./Navbar.css";
 import logo from "../../resources/snacks.png";
 
-
 function Navbar() {
 
     function scrollToProducts(){

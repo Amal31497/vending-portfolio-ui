@@ -1,0 +1,25 @@
+.call-today-wrapper{
+    margin-left:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom:0;
+    background-color:rgb(180, 41, 29);
+    color:white;
+    font-weight:900;
+    height:35px;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+}
+
+.call-today-wrapper>*{
+
+}
+
+.call-today-wrapper>p{
+    /* font-size: 15px; */
+    margin:0;
+}

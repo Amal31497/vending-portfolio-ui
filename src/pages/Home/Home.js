@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/Footer';
 import Services from '../../components/Services/Services';
 import RequestSteps from '../../components/RequestSteps/RequestSteps';
 import OurMachines from '../../components/OurMachines/OurMachines';
+import CallToday from '../../components/CallToday/CallToday';
 
 function Home(){
 
@@ -24,6 +25,7 @@ function Home(){
             <MarqueeProductLine />
             <h4 style={{marginTop:"5%",marginBottom:"2%", fontWeight:"900"}} id="contact">How to get in touch with us</h4>
             <ContactForm />
+            <CallToday />
             <Footer />
         </div>
     )
