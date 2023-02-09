@@ -1,12 +1,34 @@
 import React from 'react';
 import "./HomeMainImage.css";
-import MainImage from "../../resources/pexels-aleksandar-pasaric-2338113.jpg";
+import MainImage from "../../resources/main-image.jpg";
 
 function HomeMainImage(){
+
+    function scrollToProducts(){
+        const section = document.querySelector( '#products' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
+
+    function scrollToContact(){
+        const section = document.querySelector( '#contact' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
 
     return(
         <div className="HomwMainImageWrapper">
             <img src={MainImage} className="home-main-image"/>
+            <div className="home-main-image-darkening-wrapper">
+                <p className="home-main-image-title">Vending Solution for your business</p><br />
+                <p className="home-main-image-title">Located in Pasadena, CA</p>
+                <div className="home-main-image-first-buttons">
+                    <button className="home-main-image-leftButton" onClick={scrollToProducts}>
+                        EXPLORE OUR PRODUCT
+                    </button>
+                    <button className="home-main-image-rightButton" onClick={scrollToContact}>
+                        GET STARTED HERE
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }

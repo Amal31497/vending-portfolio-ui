@@ -8,7 +8,7 @@
 .navbar-title{
     display: flex;
     justify-content: space-evenly;
-    width:60%;
+    width: clamp(40%,70%,100%);
     align-items: center;
     margin-left:auto;
     margin-right:auto;
@@ -16,8 +16,10 @@
 
 .logoMain{
     display:flex;
-    justify-content: space-evenly;
-    width:40%;
+    justify-content: space-around;
+    width:clamp(45%, 55%, 60%);
+    margin-left:clamp(10px,25px,40px);
+    margin-right:clamp(10px,25px,40px);
 }
 .navbar-title>*{
     font-weight:700;
@@ -28,7 +30,7 @@
 .navbar-navigation{
     display:flex;
     justify-content: space-evenly;
-    width: 70%;
+    width: 100%;
     align-items: center;
     height:70%;
 }

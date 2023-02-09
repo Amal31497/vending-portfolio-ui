@@ -1,0 +1,28 @@
+.request-steps-wrapper{
+    background-color:#1C6758;
+    margin-top:40px;
+    padding-top:10px;
+    color:white;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.request-steps-wrapper-steps{
+    margin-left:auto !important;
+    margin-right:auto !important;
+    padding-bottom:30px;
+}
+
+.request-steps-wrapper-step{
+    width:30% !important;
+    height:160px !important;
+    border-radius:2rem;
+    padding-top:20px;
+    height:130px;
+    margin-left:1.5%;
+    margin-right:1.5%;
+}
+
+.smallIcon{
+    margin-bottom:10px;
+}

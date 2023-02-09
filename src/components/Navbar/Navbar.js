@@ -20,12 +20,15 @@ function Navbar() {
             <div className="navbar-title">
                 <h6 className="navigation-buttons" onClick={scrollToProducts}>Products</h6>
                 <div className="logoMain">
-                    <h3>Snackster</h3>
-                    <img
-                        src={logo}
-                        width="50px"
-                        height="50px"
-                    />
+                    <h3>Snackster
+                        <span style={{paddingLeft:"10px"}}>
+                            <img
+                                src={logo}
+                                width="50px"
+                                height="50px"
+                            />
+                        </span>
+                    </h3>
                 </div>
                 <h6 className="navigation-buttons" onClick={scrollToContact}>Contact</h6>
             </div>

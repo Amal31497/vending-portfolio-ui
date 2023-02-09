@@ -5,6 +5,42 @@
     -webkit-animation-iteration-count: 1;
     animation-duration:2s;
     animation-fill-mode: forwards;
+    background-color: linear-gradient(white, blue) !important;
+}
+
+.HomwMainImageWrapper{
+    position:relative;
+}
+
+.home-main-image-darkening-wrapper{
+    height:100%;
+    width: 100%;
+    float:left;
+    position:absolute;
+    display:block;
+    padding-top:5%;
+    bottom:0%;
+    background: linear-gradient(to left top, transparent, black 70%);
+}
+
+.home-main-image-darkening-wrapper>*{
+    opacity:0%;
+    animation-name:appear;
+    animation-iteration-count: 1;
+    animation-delay:0.7s;
+    -webkit-animation-iteration-count: 1;
+    animation-duration:1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity:0%;
+        margin-left:3%;
+    } to {
+        opacity:100%;
+        margin-left:0%;
+    }
 }
 
 @keyframes unblur {
@@ -15,9 +51,56 @@
     }
 }
 
-
-.HomwMainImageWrapper{
-    position: relative;
+.home-main-image-first-buttons{
+    margin-top:clamp(2rem, calc(4.3vw + 4.8rem), 4.3625rem);
+    display: flex;
+    justify-content: start;
+    padding-left:6%;
+    width:95%;
+    font-size:14px;
+    height:37px;
 }
 
+.home-main-image-leftButton{
+    background-color:rgb(180, 41, 29);
+    color:white;
+    font-weight:900;
+    width:250px;
+    outline:none;
+    border:none;
+    margin-right:15px;
+}
 
+.home-main-image-leftButton:hover{
+    background-color:#1C6758;
+}
+
+.home-main-image-rightButton{
+    color:black;
+    font-weight:900;
+    width:180px;
+    outline:none;
+    border:none;
+}
+
+.home-main-image-rightButton:hover{
+    background-color:#1C6758;
+    color:white;
+}
+
+.home-main-image-first-buttons>button{
+    border-radius: 10rem;
+}
+
+.home-main-image-darkening-wrapper>p{
+    color:white;
+    font-weight: 900;
+    height: clamp(1px, 1px, 10px);
+    font-size: clamp(0.55rem, calc(1.3vw + 0.8rem), 4.0625rem);
+    filter:brightness(400px);
+    display: flex;
+    justify-content: start;
+    padding-left:6%;
+    width:100%;
+
+}

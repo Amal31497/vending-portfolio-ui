@@ -1,0 +1,30 @@
+.servicesWrapper{
+    width:clamp(85vw, calc(1.3vw + 0.8rem), 4.0625rem);
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media (min-height: 992px) {
+    .servicesWrapper{
+        height:12vh;
+    }
+}
+
+.service-listing-r{
+    height:28%;
+}
+
+.service-listing{
+    height:40vh;
+    padding-top:25px;
+}
+
+.service-listing>h5{
+    font-weight: 800;
+}
+
+.service-listing-icon{
+    width:75px;
+    height:75px;
+    margin-bottom:25px;
+}
