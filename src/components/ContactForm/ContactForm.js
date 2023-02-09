@@ -46,6 +46,9 @@ function ContactForm(){
             } else {
                 setButtonStatus('Error')
             }
+                            setTimeout(() => {
+                    setButtonStatus('Submit');
+                }, 1000)
         })
     }
 
