@@ -61,10 +61,10 @@ function ContactForm(){
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:"red"}}>*</span>Email : </p>
             </div>
             <div className="inputs">
-                <input placeholder="Name of your business (Hotel, Apt complex, etc.)" value={name} onChange={(e) => setName(e.target.value)}></input>
-                <input placeholder="123 Best Street, City, State 99999" value={address} onChange={(e) => setAddress(e.target.value)}></input>
+                <input placeholder="Name of your business (Hotel, Apt complex, etc.)" maxLength="100" value={name} onChange={(e) => setName(e.target.value)}></input>
+                <input placeholder="123 Best Street, City, State 99999" maxLength="100" value={address} onChange={(e) => setAddress(e.target.value)}></input>
                 <input placeholder="(123)-456-7890" value={phone} onChange={(e) => setPhone(e.target.value)}></input>
-                <input placeholder="youremail@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                <input placeholder="youremail@gmail.com" maxLength="100" value={email} onChange={(e) => setEmail(e.target.value)}></input>
             </div>
             <button className={`contact-form-${buttonStatus}-button`} onClick={(e) => submitForm(e)}><span>{buttonStatus}</span></button>
         </div>

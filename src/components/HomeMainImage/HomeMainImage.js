@@ -25,7 +25,7 @@ function HomeMainImage(){
                         EXPLORE OUR PRODUCT
                     </button>
                     <button className="home-main-image-rightButton" onClick={scrollToContact}>
-                        GET STARTED HERE
+                        START HERE
                     </button>
                 </div>
             </div>

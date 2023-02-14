@@ -3,21 +3,23 @@
     width:290px;
 }
 
-.machine-pics-wrapper{
-}
-
 #our-machines-main-text{
     margin-left:auto;
     margin-right:auto;
     text-align: start;
-    width:80%;
-    height:clamp(1rem, calc(2vw + 12rem), 12rem);
+    margin-bottom:40px;
+    margin-top:30px;
 }
 
+.our-machines-wrapper{
+    margin-right:auto !important;
+    margin-left:auto !important;
+    width:clamp(90%, calc(40vw + 12rem), 95vw);
+}
 
 .our-machines-extra{
     text-align: start;
-    width:80%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
 }   
