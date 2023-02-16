@@ -18,6 +18,10 @@
     width:60%;
 }
 
+.labels{
+    text-align: right;
+}
+
 .inputs>input{
     margin-bottom:1rem;
     height:25px;

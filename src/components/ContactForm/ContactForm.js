@@ -52,13 +52,24 @@ function ContactForm(){
         })
     }
 
+    const [isDesktop, setDesktop] = useState(window.innerWidth);
+
+    const updateMedia = () => {
+      setDesktop(window.innerWidth);
+    };
+  
+    useEffect(() => {
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia);
+    });
+
     return (
         <div className="contact-form-wrapper">
             <div className="labels">
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:"red"}}>*</span>Name : </p>
+                <p><span style={{color:"red"}}>*</span>Name : </p>
                 <p><span style={{color:"red"}}>*</span>Address : </p>
-                <p>&nbsp;&nbsp;&nbsp;<span style={{color:"red"}}>*</span>Phone : </p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:"red"}}>*</span>Email : </p>
+                <p><span style={{color:"red"}}>*</span>Phone : </p>
+                <p><span style={{color:"red"}}>*</span>Email : </p>
             </div>
             <div className="inputs">
                 <input placeholder="Name of your business (Hotel, Apt complex, etc.)" maxLength="100" value={name} onChange={(e) => setName(e.target.value)}></input>
