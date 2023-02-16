@@ -1,10 +1,11 @@
 .request-steps-wrapper{
     background-color:#1C6758;
     margin-top:40px;
-    padding-top:10px;
+    padding-top:1px;
     color:white;
     border-top-left-radius: 15%;
     border-bottom-right-radius: 15%;
+    height:clamp(18rem, calc(20vh + 20rem), 44vh) !important;
 }
 
 .request-steps-wrapper-steps{
