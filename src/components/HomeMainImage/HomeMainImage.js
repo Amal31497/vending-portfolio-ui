@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./HomeMainImage.css";
 import MainImage from "../../resources/main-image.jpg";
 
@@ -21,9 +21,9 @@ function HomeMainImage(){
                 <p className="home-main-image-title">Vending Solution for your business</p><br />
                 <p className="home-main-image-title">Located in Pasadena, CA</p>
                 <div className="home-main-image-first-buttons">
-                    <button className="home-main-image-leftButton" onClick={scrollToProducts}>
+                    {/* <button className="home-main-image-leftButton" onClick={scrollToProducts}>
                         EXPLORE OUR PRODUCT
-                    </button>
+                    </button> */}
                     <button className="home-main-image-rightButton" onClick={scrollToContact}>
                         START HERE
                     </button>
