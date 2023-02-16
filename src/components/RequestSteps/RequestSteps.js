@@ -8,7 +8,7 @@ function RequestSteps(){
 
     return(
         <div className="request-steps-wrapper">
-            <h4 style={{ marginTop: "8%", marginBottom: "3%", fontWeight: "900" }} id="requestSteps">How to request our services</h4>
+            <h4 style={{ marginTop:"auto", marginBottom: "3%", fontWeight: "900" }} id="requestSteps">How to request our services</h4>
             <div className="request-steps-wrapper-steps row">
                 <div className="request-steps-wrapper-step col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <FiPhoneCall size="48" className="smallIcon"/>
