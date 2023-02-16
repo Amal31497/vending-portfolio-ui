@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import HomeMainImage from "../../components/HomeMainImage/HomeMainImage";
 import MarqueeProductLine from '../../components/MarqueeProductLine/MarqueeProductLine';
@@ -10,11 +10,42 @@ import OurMachines from '../../components/OurMachines/OurMachines';
 import CallToday from '../../components/CallToday/CallToday';
 
 function Home(){
+    const [isDesktop, setDesktop] = useState(window.innerWidth);
 
+    const updateMedia = () => {
+      setDesktop(window.innerWidth);
+    };
+  
+    useEffect(() => {
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia);
+    });
+
+    function scrollToProducts(){
+        const section = document.querySelector( '#products' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
+
+    function scrollToContact(){
+        const section = document.querySelector( '#contact' );
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    };
 
     return (
         <div className="home">
-            <HomeMainImage />
+            {isDesktop < 600 ?
+                <div className="homePhoneScreenMainWrapper">
+                    <div style={{ display: "block", fontWeight: "900", fontSize:"20px"}}>
+                        <p>Vending solution for your business</p>
+                        <p>Pasadena, CA</p>
+                    </div>
+                    <button className="home-main-rightButton" onClick={scrollToContact}>
+                        START HERE
+                    </button>
+                </div>
+                :
+                <HomeMainImage />
+            }
             <h4 style={{marginTop:"5%",marginBottom:"2%", fontWeight:"900"}} id="offers">What do we offer</h4>
             <Services />
             <br />
