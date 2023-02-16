@@ -3,8 +3,7 @@
     margin-top:40px;
     padding-top:13px;
     color:white;
-    border-top-left-radius: 15%;
-    border-bottom-right-radius: 15%;
+    border-radius:2rem;
     height:clamp(18rem, calc(20vh + 20rem), 44vh) !important;
 }
 
