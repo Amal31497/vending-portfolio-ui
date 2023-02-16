@@ -19,7 +19,7 @@ function HomeMainImage(){
             <img src={MainImage} className="home-main-image"/>
             <div className="home-main-image-darkening-wrapper">
                 <p className="home-main-image-title">Vending Solution for your business</p><br />
-                <p className="home-main-image-title">Located in Pasadena, CA</p>
+                <p className="home-main-image-title">Pasadena, CA</p>
                 <div className="home-main-image-first-buttons">
                     {/* <button className="home-main-image-leftButton" onClick={scrollToProducts}>
                         EXPLORE OUR PRODUCT
