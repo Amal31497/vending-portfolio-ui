@@ -14,7 +14,7 @@ function Services() {
                 <div className="service-listing col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <img className="service-listing-icon" src={VendingIcon} />
                     <h5>Free Machine Placement</h5>
-                    <p>We will deliver and install any vending machine for free.</p>
+                    <p>We will deliver and install any of our vending machines for free.</p>
                 </div>
                 <div className="service-listing col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <img className="service-listing-icon" src={MaintenanceIcon} />
