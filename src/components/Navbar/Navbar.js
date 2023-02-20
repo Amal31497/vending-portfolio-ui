@@ -1,24 +1,27 @@
 import React from 'react';
 import "./Navbar.css";
+import { useHistory } from 'react-router-dom';
 import logo from "../../resources/snacks.png";
 
 function Navbar() {
-
-    function scrollToProducts(){
-        const section = document.querySelector( '#products' );
-        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    let history = useHistory ();
+    function goToProducts(){
+        history.push("./Products");
     };
 
-    function scrollToContact(){
-        const section = document.querySelector( '#contact' );
-        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    function goToContact(){
+        history.push("./Contact");
     };
+
+    function goToHome(){
+        history.push("./");
+    }
 
     return (
         <div className="navbar">
             <div className="navbar-title">
-                <h6 className="navigation-buttons" onClick={scrollToProducts}>Products</h6>
-                <div className="logoMain">
+                <h6 className="navigation-buttons" onClick={goToProducts}>Products</h6>
+                <div className="logoMain" onClick={goToHome}>
                     <h3>Snackster
                         <span style={{paddingLeft:"10px"}}>
                             <img
@@ -29,7 +32,7 @@ function Navbar() {
                         </span>
                     </h3>
                 </div>
-                <h6 className="navigation-buttons" onClick={scrollToContact}>Contact</h6>
+                <h6 className="navigation-buttons" onClick={goToContact}>Contact</h6>
             </div>
         </div>
     )

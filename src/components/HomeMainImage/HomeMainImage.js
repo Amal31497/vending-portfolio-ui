@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import "./HomeMainImage.css";
 import MainImage from "../../resources/main-image.jpg";
 
 function HomeMainImage(){
-
+    let history = useHistory ();
     function scrollToProducts(){
-        const section = document.querySelector( '#products' );
-        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+        history.push("./Products");
     };
 
     function scrollToContact(){

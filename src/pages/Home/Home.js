@@ -35,6 +35,7 @@ function Home(){
         <div className="home">
             {isDesktop < 600 ?
                 <div className="homePhoneScreenMainWrapper">
+                    <hr className="homePhoneScreenMainWrapperSeparator" />
                     <div style={{ display: "block", fontWeight: "900", fontSize:"20px"}}>
                         <p>Vending solution for your business</p>
                         <p>Pasadena, CA</p>
